@@ -10,6 +10,10 @@ struct SPointType
 {
     int16_t x {};
     int16_t y {};
+    SPointType(int16_t x = 0, int16_t y = 0):
+            x(x),
+            y(y)
+    {}
 };
 
 
@@ -17,6 +21,10 @@ struct SMarkerType
 {
     float x {};
     float y {};
+    SMarkerType(float x = 0, float y = 0) :
+            x(x),
+            y(y)
+    {}
 };
 
 const float MARKERS_SCALE = 100.0f;

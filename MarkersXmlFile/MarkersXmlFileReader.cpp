@@ -54,10 +54,7 @@ bool MarkersXmlFileReader::xmlRead(const QString &fileName)
 
         points = QString(*regExpr.capturedTexts().begin()).toInt();
 
-        if(points < 0)
-        {
-            break;  // Ошибка
-        }
+
 
         mMarkers.reserve(points);
         mMarkers.clear();
